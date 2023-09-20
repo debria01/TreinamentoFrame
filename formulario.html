@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Formulario</title>
+<script type="text/javascript">
+				function validar()
+					{ 
+						var n = document.formulario.pnome.value;
+						var s = document.formulario.snome.value;
+						var e = document.formulario.email_usuario.value;
+						var t = document.formulario.telephone.value;
+						var p = document.formulario.senha.value;
+						var c = document.formulario.confirmacao.value;
+						var b = document.formulario.biografia.value;
+						if(n=="")
+							{
+								alert('O campo nome está vazio');
+								document.formulario.pnome.focus();
+							}
+							
+						else if(s=="")	
+							{
+								alert('O campo sobrenome está vazio');
+								document.formulario.snome.focus();
+							}
+						else if(e=="")	
+							{
+								alert('O campo email está vazio');
+								document.formulario.email_usuario.focus();
+							}
+						else if(t=="")	
+							{
+								alert('O campo telefone está vazio');
+								document.formulario.telephone.focus();
+							}
+						else if(p=="")	
+							{
+								alert('O campo senha está vazio');
+								document.formulario.senha.focus();
+							}
+						else if(c=="")	
+							{
+								alert('O campo confirmação da senha está vazio');
+								document.formulario.confirmacao.focus();
+							}
+						else if(b=="")	
+							{
+								alert('O campo biografia está vazio');
+								document.formulario.biografia.focus();
+							}
+					}
+			</script>
+</head>
+
+	<body>
+		<form name="formulario" action="teste.jsp" method="post">
+				<p>
+					<label>
+						Nome: <input type="text" name="pnome">
+					</label>
+				</p>
+				<p>
+					<label>
+						Sobrenome: <input type="text" name="snome">
+					</label>
+			
+				</p>
+				<p>
+					<label for="eml">
+					E-mail: <input text="email" name="email_usuario" id="eml"
+					</label>
+				</p>
+				<p>
+					<label>
+						Telefone:<input type="tel" name="telephone" placeholder="(XX) XXXX-XXXX" 
+						pattern="^\(?\d{2}\)\d{4}.*?$">
+					</label>
+				</p>
+				<p>
+					<label>
+						Senha: <input type="password" name="senha">
+					</label>
+				</p>
+				<p>
+					<label>
+
+						<input type="password" placeholder="Confirme Senha" name="confirmacao" id="confirm_password" required>
+
+        					<button type="submit" class="pure-button pure-button-primary">Confirmar</button>
+					</label>
+				</p>
+				<p>
+					<label>
+						Biografia:<br>
+						<textarea cols="80" rows="4" name="biografia"></textarea>
+					</label>
+				
+				</p>
+				<p>
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Limpar">
+					<input type="button" value="Validação" onClick="validar();">
+
+	</body>
+</html>

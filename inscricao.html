@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Formulario de Inscricao</title>
+</head>
+
+	<body>
+		<form name="formulario" action="obrigado.html" method="post">
+				<p>
+					<label>
+						Nome: <input type="text" name="pnome" placeholder="Digite o seu nome aqui" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						Sobrenome: <input type="text" name="snome" placeholder="Digite o seu sobrenome aqui" required>
+					</label>
+			
+				</p>
+				<p>
+					<label>
+						CPF:<input type="on" name="cpf" pattern="^\(?\d{2}\)\d{4}*?$" placeholder="Digite o seu CPF aqui" required>
+					</label>
+				</p>
+				<p>
+					<label for="eml">
+					E-mail: <input type="email" name="email_usuario" id="eml" placeholder="Digite o seu email aqui" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						Telefone:<input type="tel" name="telephone" pattern="^\(?\d{2}\)\d{4}.*?$" placeholder="Digite o seu número de telefone aqui" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						Curso:
+						<select required>
+						<option selected disabled value="">Selecione o curso de sua preferência</option>
+						<option value="banco_de_dados">Banco de Dados</option>
+						<option value="desenvolvimento_programacao">Desenvolvimento & Programação</option>
+						<option value="soft_skills">Soft Skills</option>
+						</select>
+					</label>
+				
+				</p>
+				<p>
+					<input type="submit" name="enviar" value="Enviar">
+					<input type="reset" value="Limpar">
+					
+				</p>
+
+	</body>
+</html>

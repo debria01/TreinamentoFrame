@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Formulario de Contato</title>
+</head>
+
+	<body>
+		<form name="formulario" action="contao.html" method="post">
+				<p>
+					<label>
+						Nome: <input type="text" name="pnome" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						Sobrenome: <input type="text" name="snome" required>
+					</label>
+			
+				</p>
+				<p>
+					<label for="eml">
+					E-mail: <input text="email" name="email_usuario" id="eml" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						Telefone:<input type="tel" name="telephone" placeholder="(XX) XXXX-XXXX" 
+						pattern="^\(?\d{2}\)\d{4}.*?$" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						Mensagem:<br>
+						<textarea cols="80" rows="4" name="mensagem" required></textarea>
+					</label>
+				
+				</p>
+				<p>
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Limpar">
+				</p>
+
+	</body>
+</html>
